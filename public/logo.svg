@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="31.157486mm"
+   height="29.05175mm"
+   viewBox="0 0 31.157486 29.05175"
+   version="1.1"
+   id="svg582"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="Logo Design.svg"
+   inkscape:export-filename="Klein logo design.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview584"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     showguides="true"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="371.58461"
+     inkscape:cy="132.22897"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="3832"
+     inkscape:window-y="384"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2023" />
+  </sodipodi:namedview>
+  <defs
+     id="defs579" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-201.9942,-124.03895)">
+    <path
+       d="m 217.02093,138.42762 v 9.83373 h 1.44918 1.44918 v -4.0163 -3.9956 l 1.51129,-0.14492 c 3.66436,-0.33124 5.13425,-2.31869 4.84441,-6.56272 -0.16562,-2.60854 -1.09724,-4.07842 -3.02258,-4.72021 -0.39336,-0.1242 -1.94605,-0.22772 -3.45734,-0.22772 h -2.77414 z m 5.23776,-6.91468 c 0.72458,0.33125 0.97301,1.03514 0.97301,2.79487 0,1.61479 -0.33123,2.60853 -0.93162,2.85696 -0.18632,0.0621 -0.8074,0.12421 -1.36637,0.12421 h -1.01442 v -3.00188 -3.00188 h 0.93162 c 0.49686,0 1.13864,0.10351 1.40778,0.22772 z"
+       id="path138-5"
+       style="stroke-width:0.0207027"
+       inkscape:export-filename="FliesenPrakaj-kleinLogo.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 207.80051,137.10481 v 8.5509 l 1.22463,1.20375 c 0.6875,0.66416 1.31055,1.20377 1.39649,1.20377 0.0859,0 0.17189,-2.15848 0.17189,-4.77355 v -4.77356 h 1.93361 1.93362 v -1.24527 -1.24528 h -1.93362 -1.93361 v -2.49055 -2.4698 l 2.42775,-0.008 2.52391,-0.017 0.001,-1.30329 0.0102,-1.18301 h -3.88871 -3.86723 z"
+       id="path136-8-7-6"
+       style="stroke-width:0.0211165"
+       sodipodi:nodetypes="cccsscccccccccccccccc" />
+    <path
+       d="m 201.9942,134.04119 c 0.0966,5.46547 0.004,12.00811 0.003,14.49445 l -0.001,4.55506 9.14507,-0.01 h 9.13225 l 1.13549,-1.07518 c 0.62815,-0.5824 1.15014,-1.19897 1.15014,-1.28856 0,-0.0896 -4.09759,-0.10022 -9.07442,-0.10022 h -9.06019 v -11.96135 -11.96135 l 12.87696,-0.0896 c 7.05455,-0.0672 13.07025,-0.10721 13.19105,-0.0624 0.0966,0.0447 0.0241,3.87033 0.0241,8.46223 v 8.31021 l 1.32877,-1.20957 1.2977,-1.20957 5.5e-4,-8.31147 0.008,-8.54392 -15.71904,0.005 -15.43554,-0.006 z"
+       id="path134-3-0-8"
+       style="fill:#ff0000;stroke-width:0.0232627"
+       sodipodi:nodetypes="csccccsscccccscccccccc"
+       inkscape:export-filename="path134-3.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>

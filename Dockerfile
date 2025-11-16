@@ -1,0 +1,26 @@
+# OFFICIAL NODE IMAGE
+FROM node:20-alpine
+
+# WORK DIRECTORY
+WORKDIR /app
+
+# ONLY COPY PACKAGE FILES FIRST
+COPY package*.json ./
+
+# INSTALL deps
+RUN npm install
+
+# COPY PROJECT FILES
+COPY . .
+
+# BUILD PROJECT
+RUN npm run build
+
+# ENV
+ENV NODE_ENV=production
+
+# EXPOSE PORT
+EXPOSE 3000
+
+# START SERVER
+CMD ["npm", "start"]

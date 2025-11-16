@@ -1,0 +1,17 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Only copy package.json first
+COPY package*.json ./
+
+# Install dependencies inside container
+RUN npm install
+
+# Create a folder for source code
+RUN mkdir /app/src
+
+# Next.js dev will run inside /app/src
+WORKDIR /app/src
+
+CMD ["npm", "run", "dev"]
