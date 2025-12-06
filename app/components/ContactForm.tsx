@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, User, MessageSquare } from "lucide-react";
+import { Mail, MessageSquare, Phone, User } from "lucide-react";
 import { sendMail } from "../actions/sendMail";
 
 export default function ContactForm() {
@@ -18,51 +18,63 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="kontakt" className="py-24 bg-premiumWhite">
-      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
+    <section id="kontakt" className="py-24 bg-gradient-to-br from-premiumBeige/70 via-white to-[#eef2ff]">
+      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-[1.05fr_0.95fr] gap-10 items-start">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4 }}
         >
-          <p className="text-sm font-semibold text-premiumRed tracking-[0.15em] uppercase mb-2">
+          <div className="inline-flex items-center gap-2 rounded-full bg-premiumRed/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-premiumRed mb-4">
             Kontakt
-          </p>
-          <h2 className="text-3xl font-bold text-premiumCharcoal mb-4">
+          </div>
+          <h2 className="text-3xl font-bold text-premiumCharcoal mb-3">
             Erzählen Sie uns von Ihrem Projekt
           </h2>
-          <p className="text-premiumGrey mb-4">
+          <p className="text-premiumGrey mb-6 leading-relaxed">
             Schicken Sie uns eine kurze Beschreibung – gerne mit Infos zu Raum,
             Fliesengröße und Wunschoptik. Wir melden uns zeitnah bei Ihnen.
           </p>
-          <p className="text-premiumCharcoal mb-2">
-            <strong>Telefon:</strong>{" "}
-            <a
-              href="tel:+436644456521"
-              className="text-premiumRed hover:underline"
-            >
-              +43 664 445 6521
-            </a>
-          </p>
-          <p className="text-premiumCharcoal mb-2">
-            <strong>E-Mail:</strong>{" "}
-            <a
-              href="mailto:office@fliesenprakaj.at"
-              className="text-premiumRed hover:underline"
-            >
-              office@fliesenprakaj.at
-            </a>
-          </p>
-          <p className="text-xs text-premiumGrey mt-4">
-            Hinweis: Ihre Daten werden vertraulich behandelt und nur zur
-            Bearbeitung Ihrer Anfrage verwendet.
-          </p>
+
+          <div className="space-y-3 rounded-2xl border border-premiumGrey/10 bg-white/90 p-5 shadow-sm">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-premiumRed/12 text-premiumRed">
+                <Phone size={18} />
+              </div>
+              <div>
+                <p className="text-sm text-premiumGrey">Telefon</p>
+                <a
+                  href="tel:+436644456521"
+                  className="text-premiumCharcoal font-semibold hover:text-premiumRed transition"
+                >
+                  +43 664 445 6521
+                </a>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-premiumRed/12 text-premiumRed">
+                <Mail size={18} />
+              </div>
+              <div>
+                <p className="text-sm text-premiumGrey">E-Mail</p>
+                <a
+                  href="mailto:office@fliesenprakaj.at"
+                  className="text-premiumCharcoal font-semibold hover:text-premiumRed transition"
+                >
+                  office@fliesenprakaj.at
+                </a>
+              </div>
+            </div>
+            <p className="text-xs text-premiumGrey pt-2">
+              Ihre Daten werden vertraulich behandelt und nur zur Bearbeitung Ihrer Anfrage verwendet.
+            </p>
+          </div>
         </motion.div>
 
         <motion.form
           action={handleSubmit}
-          className="bg-premiumBeige rounded-2xl shadow-lg p-6 space-y-4 border border-premiumGrey/20"
+          className="bg-white/95 rounded-3xl shadow-xl p-7 space-y-4 border border-premiumGrey/10"
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -75,7 +87,7 @@ export default function ContactForm() {
               type="text"
               required
               placeholder="Ihr Name"
-              className="w-full pl-9 pr-3 py-2 rounded-md border border-premiumGrey/40 focus:outline-none focus:ring-2 focus:ring-premiumRed focus:border-premiumRed text-sm bg-premiumWhite"
+              className="w-full pl-10 pr-3 py-3 rounded-lg border border-premiumGrey/25 focus:outline-none focus:ring-2 focus:ring-premiumRed focus:border-premiumRed text-sm bg-white/80 shadow-inner"
             />
           </div>
 
@@ -86,7 +98,7 @@ export default function ContactForm() {
               type="email"
               required
               placeholder="Ihre E-Mail"
-              className="w-full pl-9 pr-3 py-2 rounded-md border border-premiumGrey/40 focus:outline-none focus:ring-2 focus:ring-premiumRed focus:border-premiumRed text-sm bg-premiumWhite"
+              className="w-full pl-10 pr-3 py-3 rounded-lg border border-premiumGrey/25 focus:outline-none focus:ring-2 focus:ring-premiumRed focus:border-premiumRed text-sm bg-white/80 shadow-inner"
             />
           </div>
 
@@ -100,14 +112,14 @@ export default function ContactForm() {
               rows={5}
               required
               placeholder="Ihre Nachricht (Projekt, Raum, Fliesenwunsch...)"
-              className="w-full pl-9 pr-3 py-2 rounded-md border border-premiumGrey/40 focus:outline-none focus:ring-2 focus:ring-premiumRed focus:border-premiumRed text-sm resize-none bg-premiumWhite"
+              className="w-full pl-10 pr-3 py-3 rounded-lg border border-premiumGrey/25 focus:outline-none focus:ring-2 focus:ring-premiumRed focus:border-premiumRed text-sm resize-none bg-white/80 shadow-inner"
             />
           </div>
 
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-premiumRed hover:bg-[#6d2f24] disabled:bg-premiumGrey text-premiumBeige font-semibold py-2.5 rounded-md shadow transition"
+            className="w-full bg-premiumRed hover:bg-[#d0523d] disabled:bg-premiumGrey text-premiumWhite font-semibold py-3 rounded-lg shadow-lg shadow-premiumRed/20 transition"
           >
             {loading ? "Wird gesendet..." : "Nachricht senden"}
           </button>

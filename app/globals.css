@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fff7f1;
+  --foreground: #231a14;
 }
 
 @theme inline {
@@ -12,15 +12,14 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body {
+  background: transparent;
+  color: var(--foreground);
+  font-family: "Inter", "SF Pro Display", "Segoe UI", system-ui, -apple-system,
+    sans-serif;
 }
 
-body {
-  background: var(--background);
+::selection {
+  background-color: rgba(224, 92, 68, 0.15);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }

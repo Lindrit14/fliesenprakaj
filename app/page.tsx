@@ -5,6 +5,7 @@ import About from "./components/About";
 import Steps from "./components/Steps";
 import Gallery from "./components/Gallery";
 import ContactForm from "./components/ContactForm";
+import TestimonialsPartners from "./components/TestimonialsPartners";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <About />
         <Steps />
         <Gallery />
+        <TestimonialsPartners />
         <ContactForm />
       </main>
       <Footer />

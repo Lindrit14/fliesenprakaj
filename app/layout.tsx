@@ -39,7 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <body className="bg-slate-950 text-slate-100 antialiased">
+      <body className="min-h-screen bg-gradient-to-b from-premiumBeige via-white to-[#f5f7ff] text-premiumCharcoal antialiased">
         {children}
       </body>
     </html>

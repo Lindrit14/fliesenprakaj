@@ -7,12 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-    premiumRed: "#8C3A2D",
-    premiumBeige: "#EDE7DD",
-    premiumGrey: "#6E6E6E",
-    premiumCharcoal: "#1C1C1C",
-    premiumWhite: "#FFFFFF"
-  },
+        premiumRed: "#E05C44",
+        premiumBeige: "#FFF7ED",
+        premiumGrey: "#706660",
+        premiumCharcoal: "#231A14",
+        premiumWhite: "#FFFFFF",
+      },
     },
   },
   plugins: [],
